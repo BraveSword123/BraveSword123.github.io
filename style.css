@@ -53,7 +53,7 @@ How to make it so a image cant exit a div
   position: absolute; 
   z-index: 1;
   height: 55px; 
-  left:-200px; /*255*/
+  right: 250px; ; /*255*/
   bottom: 30px;   
 }
 
@@ -71,18 +71,20 @@ How to make it so a image cant exit a div
 
 #Sims_text{
     font-family: 'Courier New', Courier, monospace; 
-    right : 230px; /*230*/
+    left : -320px; /*230*/
+    top: -120px; 
     font-size: 12px;
     color: white;
     z-index: 1; 
   width: 90px; 
+  position: absolute; 
 }
 
 #Game_text{
     font-family: 'Courier New', Courier, monospace;
     position: absolute; 
     bottom: -10px; 
-    right : 275px; /*270*/
+    right : 285px; /*270*/
     font-size: 12px;
     color: white;
     z-index: 1;
