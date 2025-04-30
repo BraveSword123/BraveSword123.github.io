@@ -111,12 +111,13 @@ How to make it so a image cant exit a div
   position: absolute; 
   width: 650px;
   height: 500px;
-  background-color: mediumpurple;
+ background-color: mediumpurple; 
   display: none; 
   margin-left: auto;
   margin-right: auto; 
   z-index: 2; 
   overflow-y: scroll;
+  scrollbar-color: mediumpurple rgb(230, 202, 247);
 }
 
 #nav-bar{
@@ -125,12 +126,14 @@ How to make it so a image cant exit a div
   left: 0px;
   width: 100%; /*???*/ 
   height: 20px;
-  background-color: white;
+  background-color: rgb(230, 202, 247); /*191970*/ 
 }
 
 #resume_x{
   position: absolute;
  right: 0px; 
+ background: mediumpurple; 
+ color: rgb(0, 0, 0); 
 }
 
 #Name{
@@ -1040,7 +1043,7 @@ h4{
   z-index: 5;
 }
 #Number_close{
-  z-index: 5;   
+  z-index: 6;   
   font-size: 20px; 
   color: black; 
   width: 30px; 
@@ -1048,8 +1051,14 @@ h4{
   border: 3px, solid, deeppink;
   font-family: "Old Standard TT";
   position: absolute;
-  top: 200px;
-  left: 1200px;
+  top: 15px;
+  left: 655px;
+}
+
+#closeLetter{
+  position: absolute; 
+  top:-1px; 
+  left: 4px; 
 }
 
 #Credit{
@@ -1274,8 +1283,18 @@ width: 100%; */
   border-color: hotpink;
   cursor: pointer;
 }
-
 #resume_x:hover{
   cursor: pointer;
+  color: rgb(230, 202, 247); 
 }
+
+#resume_x:active{
+  cursor: pointer;
+  color: mediumpurple; 
+  background: rgb(230, 202, 247); 
+}
+
+/* Resume Scrollbar */
+
+
 /* Web Responsiveness */ 

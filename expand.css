@@ -555,7 +555,7 @@ html {
   
   .checklist::-webkit-scrollbar {
     width: 12px;
-    border-radius: 4px;
+    border-radius: none;
   }
   
   .checklist::-webkit-scrollbar-thumb {
