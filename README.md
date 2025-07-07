@@ -1,4 +1,4 @@
-.# 💾 Annabelle_Moore.exe
+## 💾 Annabelle_Moore.exe
 
 **Annabelle_Moore.exe** is my official personal website — a nostalgic, interactive experience styled like a 2000s-era Windows desktop. It serves as a portfolio for my completed web development projects and includes my resume for anyone interested in learning more about my background or hiring me.
 
