@@ -37,7 +37,8 @@ const randomNumber = Math.floor(Math.random() * (1000 - 1)) + 1;
 // Create for loop for input
 function returnText() {
    if (i < 10) {
-       numInput = prompt("Enter Number Here:");
+      // numInput = prompt("Enter Number Here:");
+      numInput = parseInt(document.getElementById("Input").value);
       if (isNaN(numInput)){
 document.getElementById("demo").innerHTML = "Please Enter a numerical value. Thank you!"; 
       }
