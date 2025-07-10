@@ -2,16 +2,20 @@
 
 **Annabelle_Moore.exe** is my official personal website — a nostalgic, interactive experience styled like a 2000s-era Windows desktop. It serves as a portfolio for my completed web development projects and includes my resume for anyone interested in learning more about my background or hiring me.
 
+---
 
 ## 🖥️ About the Project
 
 This website is designed to look and feel like the homescreen of a retro Windows XP laptop. Each "desktop icon" links to a unique web development project. Just like exploring a real desktop, users can click around to discover interactive apps and resources.
 
+---
+
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/570a7c71-99ce-4a70-bd48-64c03d2c45b6)
 ![image](https://github.com/user-attachments/assets/4718a9b0-b577-44a1-b079-7c101e36f176)
-![image](https://github.com/user-attachments/assets/ba8bd60e-3c0a-440b-9d83-93117feac1f4)
-![image](https://github.com/user-attachments/assets/b12bbeda-b854-41ea-9397-b7c3e4fe85f1)
+![image](https://github.com/user-attachments/assets/8f6b6e0a-4c89-406c-bec0-95d34dec82e2)
+
+---
 
 ### ✨ Features
 
