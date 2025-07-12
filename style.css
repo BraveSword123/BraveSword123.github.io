@@ -71,12 +71,12 @@ How to make it so a image cant exit a div
 
 #Sims_text{
     font-family: 'Courier New', Courier, monospace; 
-    left : -320px; /*230*/
-    top: -120px; 
+    left : -318px; /*230*/
+    top: -120px; /*-120px*/ 
     font-size: 12px;
     color: white;
     z-index: 1; 
-  width: 90px; 
+  width:73px; 
   position: absolute; 
 }
 
@@ -88,7 +88,8 @@ How to make it so a image cant exit a div
     font-size: 12px;
     color: white;
     z-index: 1;
-  width: 10px; 
+  width: 45px; 
+  text-align:center; 
 }
 
 #IE_icon:hover{
@@ -102,6 +103,9 @@ How to make it so a image cant exit a div
    position: relative;  
 }
 
+/*End Here */ 
+
+/* Did not include this*/ 
 #Sims_container{
   position: relative;  
  /* width: 120em; */ 
@@ -440,7 +444,7 @@ h4{
   top: 780px;
   left: 20px
 }
-/**/ 
+/*Stop Here*/ 
 
 #IE_text:hover{
   cursor: pointer;
@@ -474,12 +478,15 @@ h4{
   cursor: pointer;
   display: block;
 }
+
+/* Stop Here */ 
+
 #Sims_3 {
   min-width: 840px;
   min-height: 602px;
   margin: auto;
   z-index: 5; 
-  display: none; 
+ /* display: none; */ 
   position: absolute;
   
 }

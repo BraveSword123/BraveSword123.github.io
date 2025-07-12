@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <script src="https://kit.fontawesome.com/9865fe30cd.js" crossorigin="anonymous"></script>
-  <title>replit</title>
+  <title>Annabelle_Moore.exe</title>
    <link href="expand.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -12,17 +12,59 @@
   <!-- Help Link -->
   <a href="index.html" target=_self>Go to page 1</a>
 
-  <!-- Wrapper to Contain Everything -->
-  <div class="wrapper">
-    <!-- White Background -->
-    <img src='background.jpg' class="background">
+  <!-- First Part -->
+  <div id="wrapper"> 
+    <img src="windows_B.png" id="w_Background"> 
+     <div id="webpage"> 
+    <div id="nav-bar">
+        <button id="resume_x" onclick="closePage()"><b>X</b></button>
+    </div>
+      <h1 id="Name">Annabelle Moore</h1>
+       <h3>(818) 221 8373</h3>
+      <h4>annabelle.gyeniba.moore@gmail.com</h4>
+<span id="GitHub">GitHub: https://github.com/BraveSword123</span>
+      <h2 id="Ed">Education</h2>
+       <span id="Ed1">Los Angeles Pierce College (2022 - 2025) - Woodland Hills, CA </span>
+      <span id="Ed3">Associates in Math, STEM, General Studies</span>
+    <span id=Ed2> Computer Science - [3.64, Honor Roll] </span>
+        <h2 id="PaA">Projects and Activities</h2>
+
+  <span id="GWC_Title">Co-President of LAPC Girls Who Code</span>
+  <span id="GWC1">-Facilitated a 4-week web development series teaching the basics of HTML, CSS, and Javascript</span>
+       <span id="GWC2">-Organized and monitored weekly meetings for students</span>
+        <span id="GWC3">-Kept up with administrative work</span>
+       <span id="GWC4">-Created a fun and welcoming community for women in tech </span>
+
+  <span id="HackCC-Title">HackCC - First Place Winner</span>
+<span id="HackCC1">-Competed in groups of 4 against 100 students chosen from a pool of 227 applicants</span>
+       <span id="HackCC2">-Worked with teammates to create Study California Community Colleges, a website that helps community college students find resources like study groups in 30 hours.</span>
+
+<span id="Work_Title">Work Experience</span>
+
+<span id="Lib1">LAPC Library - Student Worker</span>
+
+       <span id="Lib2">-Spends 10 hours a week aiding in keeping the library books in order through shelving and creating labels for books</span>
+        <span id="Lib3">-Helps and answers questions of library-goers </span>
+<span id="Lib4">-Cleans computers and desks in library</span>
+
+    <span id="Skill_Title">Relevent Coursework and Skills</span>
+  <span id="Skill1">-C++, Object Oriented Design, Intro to Data Structures, Java</span>
+
+       <span id="Skill2">-HTML/CSS, Javascript</span>
+     </div>  
+<!-- End of First Part -->
+
+  <!--- Sims 3 Expansion -->
+  <div class="Sims_3">
+          <!-- White Background -->
+          <img src='background.jpg' class="background">
     <!-- Words at the top of Launcher -->
     <h1 class="header">The Sims 3 Game Launcher</h1>
     <!-- Gray Rectangle at the Top -->
     <div class="topper">
       <!-- Close and Minimize Buttons-->
-      <button class="mini"></button>
-      <button class="close"><b>x</b></button>
+    <!-- <button class="mini"></button> --> 
+      <button class="close" onclick="closeSims()"><b>X</b></button>
     </div>
     <!-- Side Bar with Buttons -->
     <div class="side">
@@ -120,6 +162,40 @@
       </div>
     </div>
   </div>
+  <!-- Sims 3 Expansion -->
+
+  <!-- Second Part -->
+  <div id="IE_container">
+    <img src="internet_explorer.png" id="IE_icon">
+    <span id="IE_text" onclick="showPage()">Internet <br> Explorer</span>
+  </div>
+   <div id="Sims_container"> 
+   <img src="sims_3icon.png" id="sims_icon"> 
+  <span id="Sims_text" onclick=showSims()>The Sims 3</span>
+  <img src="butterflies.png" id="game_icon">
+     <span id="Game_text" onclick=showGame()>Guess the Number</span>
+   </div> 
+   <!-- Random Number Generator Game --> 
+     <div id="Number_wrapper">
+       <button id="Number_close" onclick=closeGame()><span id="gameX">X</span></button> 
+       <h1 id="Game_title">Guess the Number!</h1>
+       <h2 id="Game_number">(1-1000)</h2>
+        <!-- <form class="name"> 
+         <input type="text" id="Input" placeholder="Enter Number">
+       </form> --> 
+        <img id= "Back">  
+        <input id="Input">
+       <button id="Enter" onclick="returnText()"> Enter</button>
+       <button id="Answer" onclick="returnAnswer()">Your Answer</button>
+       <p id="demo"></p>
+       <p id="demo1"></p> 
+       <p id="demo2"></p> 
+       <a id= "Credit" href="https://www.flaticon.com/free-icons/cute" title="Cute icons">Butterfly Icon created by Smashicons - Flaticon</a> 
+     </div>
+   <!-- --> 
+</div>
+<!-- End of Second Part-->
+
   <script src="expand.js"></script>
 </body>
 
