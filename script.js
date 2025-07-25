@@ -23,6 +23,25 @@ function closeSims(){
   document.getElementById("Sims_3").style.display = 'none';
    localStorage.setItem("showSims", "false");
 }
+
+function showSimsExp(){
+  document.getElementByClassName("Sims_3").style.display = 'block';
+   localStorage.setItem("showSims", "true");
+}
+
+function toWelcome(){
+ document.getElementById("Sims_3").style.display = 'block'; 
+ document.getElementByClassName("Sims_3").style.display = 'none';
+ document.getElementById("Sims_3").style.boxShadow = '0 0 3px 1px white'; 
+
+} 
+
+function toExp(){
+ document.getElementByClassName("Sims_3").style.display = 'block'; 
+ document.getElementById("Sims_3").style.display = 'none';
+ document.getElementByClassName("Sims_3").style.boxShadow = '0 0 3px 1px white'; 
+} 
+
 /* Number Game JS */ 
 // Declares 
 let gameCount;

@@ -121,3 +121,9 @@ function showPage(){
     document.getElementById("Number_wrapper").style.display = 'none';
      localStorage.setItem("Number_wrapper", "false");
   }
+
+  $(function() {
+   $("input[type=checkbox]").click( () => {
+     $("div").toggleClass("checkOne2");
+   })
+ });

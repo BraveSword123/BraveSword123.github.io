@@ -1,17 +1,26 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; 
+} 
 body {
-  display: flex;
+ /* display: flex;
   align-items: center;
-  justify-content: center;
-  background: black; /* Optional: fallback background color */
-  background: linear-gradient(to bottom, black, #313030); /*Change Gradient (#1e1e1e)*/ 
+  justify-content: center; */ 
+   /* background: linear-gradient(to bottom, black, #313030); */ 
+  background: black;  
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #002e74;
+  background-image: url('windows_B.png'); 
+  background-repeat: no-repeat;
+ background-size: contain;
+  background-position: center;
+  background-position-y: center; 
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%; 
+  overflow: hidden;  
+  color: #002e74; 
 }
 #wrapper{
   position: relative; 
@@ -38,53 +47,53 @@ How to make it so a image cant exit a div
   position: absolute; 
   z-index: 1;
   height: 50px; 
-  left:-394px;  
-  bottom: 195px;  
+  left:-570px;  /*-394px;*/ 
+    top: -410px; 
 }
+
+#IE_text{
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute; 
+  top: -370px; 
+  left:-560px;  /*260*/ /*-385px*/ 
+  font-size: 12px;
+  color: white;
+  z-index: 1; 
+}
+
 #sims_icon{
   position: absolute; 
   z-index: 1;
   height: 50px; 
   right: 250px;
-  bottom: 120px;   
+  top: -330px;
+  left:-565px
+}
+
+#Sims_text{
+  font-family: 'Courier New', Courier, monospace; 
+  top: -275px; 
+  left:-565px;
+  font-size: 12px;
+  color: white;
+  z-index: 1; 
+width:73px; 
+position: absolute; 
 }
 
 #game_icon{
   position: absolute; 
   z-index: 1;
   height: 55px; 
-  right: 250px; ; /*255*/
-  bottom: 30px;   
-}
-
-#IE_text{
-  font-family: 'Courier New', Courier, monospace;
-  position: absolute; 
- /* right: 35vw;
-  bottom: 20vw; */
-  bottom: 180px; 
-  left:-385px;  /*260*/
-  font-size: 12px;
-  color: white;
-  z-index: 1; 
-}
-
-#Sims_text{
-    font-family: 'Courier New', Courier, monospace; 
-    left : -318px; /*230*/
-    top: -120px; /*-120px*/ 
-    font-size: 12px;
-    color: white;
-    z-index: 1; 
-  width:73px; 
-  position: absolute; 
+ top: -250px; 
+ left:-555px;
 }
 
 #Game_text{
     font-family: 'Courier New', Courier, monospace;
     position: absolute; 
-    bottom: -10px; 
-    right : 285px; /*270*/
+    top: -195px; 
+    left:-555px;
     font-size: 12px;
     color: white;
     z-index: 1;
@@ -486,9 +495,19 @@ h4{
   min-height: 602px;
   margin: auto;
   z-index: 5; 
- /* display: none; */ 
+  display: none; 
   position: absolute;
-  
+}
+
+.Sims_3{
+  position: absolute;
+  top: 130px;  
+  min-width: 840px;
+  min-height: 602px;
+  margin: auto;
+  z-index: 5; 
+  display: none;   
+  position: absolute; 
 }
 
 .background {
@@ -598,7 +617,6 @@ h4{
   background: linear-gradient(#b4ccff, #75a1ff);
   border: 1px solid #002e72;
   z-index: 3;
-  box-shadow: 0 0 3px 1px white;
 }
 
 .Exp {
@@ -1318,3 +1336,396 @@ width:800px;
 
 
 /* Web Responsiveness */ 
+
+/* The Sims 3 Expansions */ 
+.secondExp {
+  position: absolute;
+  top: -6px;
+  left: 225px;
+  background-color: #42669f;
+  border: 2px solid #384d7b;
+  border-radius: 5px;
+  width: 578px;
+  height: 544px;
+  /*541*/
+  z-index: 1;
+  opacity: 0.9;
+}
+
+
+.blueExp {
+  position: absolute;
+  top: 322px;
+  left: 7px;
+  width: 220px;
+  height: 40px;
+  background-color: #42669f;
+  /* #58729d*/
+  border-radius: 5px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.third {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 513px;
+  width: 550px;
+  background-color: #a5ddff;
+  border: 6px solid #384d7b;
+  border-radius: 5px;
+}
+
+.tOneExp {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 17px;
+}
+
+.tcircle {
+  position: absolute;
+  top: 30px;
+  left: 7px;
+  width: 533px;
+  height: 2px;
+  border: 2px solid #749bc0;
+  border-radius: 5px;
+}
+
+.tTwoExp {
+  position: absolute;
+  top: 48px;
+  left: 10px;
+  color: #504c5e;
+  font-size: 11.2px;
+}
+
+.tBox {
+  position: absolute;
+  top: 120px;
+  height: 390px;
+  width: 546px;
+  background-color: #b5e7ff;
+  border: 1px solid #336186;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.active {
+  position: absolute;
+  z-index: 2;
+  top: 55px;
+  left: 10px;
+  font-size: 12.5px;
+  /*12*/
+  height: 23px;
+  /*21*/
+  width: 80px;
+  background: linear-gradient(#e5fcff, #b7e0ff, #86b6e8);
+  border: 0.5px solid #336186;
+  border-top-left-radius: 5px;
+}
+
+.act {
+  position: absolute;
+  top: 5px;
+  left: 26px;
+  /*22*/
+}
+
+.title {
+  position: absolute;
+  top: 55px;
+  left: 85px;
+  font-size: 13px;
+  height: 23px;
+  width: 420px;
+  background: linear-gradient(#e5fcff, #b7e0ff, #86b6e8);
+  border: 0.5px solid #336186;
+  border-top-right-radius: 5px;
+}
+
+.tit {
+  position: absolute;
+  top: 5px;
+  right: 203px;
+}
+
+.checklist {
+  position: absolute;
+  left: 10px;
+  top: 79px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 495px;
+  height: 255px;
+  border: 0.5px solid #336186;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.checkOne {
+  background-color: #d2ebf7;
+  border: 0.5px solid #b3c8d2;
+  width: 493px;
+  /*79*/
+  height: 65px;
+}
+
+.Amb {
+  position: absolute;
+  bottom: 187px;
+  left: 70px;
+  z-index: 2;
+}
+
+.OoneExp {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  color: black;
+  font-size: 13px;
+}
+
+.OtwoExp {
+  position: absolute;
+  top: 32px;
+  left: 150px;
+  color: #504c5e;
+  font-size: 11.2px;
+}
+
+.checkTwo {
+  position: absolute;
+  top: 67px;
+  left: 0px;
+  background-color: #d2ebf7;
+  border: 0.5px solid #b3c8d2;
+  width: 493px;
+  height: 65px;
+}
+
+.ToneExp {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  color: black;
+  font-size: 13px;
+}
+
+.TtwoExp {
+  position: absolute;
+  top: 32px;
+  left: 150px;
+  color: #504c5e;
+  font-size: 11.2px;
+}
+
+.Gen {
+  position: absolute;
+  bottom: -3px;
+  left: 75px;
+  z-index: 2;
+  height: 72px;
+}
+
+.checkThree {
+  position: absolute;
+  top: 134px;
+  background-color: #d2ebf7;
+  border: 0.5px solid #b3c8d2;
+  width: 493px;
+  height: 65px;
+}
+
+.Pets {
+  position: absolute;
+  top: -2px;
+  left: 70px;
+  z-index: 2;
+}
+
+.toneExp {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  color: black;
+  font-size: 13px;
+}
+
+.ttwoExp {
+  position: absolute;
+  top: 32px;
+  left: 150px;
+  color: #504c5e;
+  font-size: 11.2px;
+}
+
+.checkFour {
+  position: absolute;
+  top: 200px;
+  z-index: 1;
+  background-color: #d2ebf7;
+  border: 0.5px solid #b3c8d2;
+  width: 493px;
+  height: 65px;
+}
+
+.Sea {
+  position: absolute;
+  top: -2px;
+  left: 65px;
+  z-index: 2;
+}
+
+.FoneExp {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  color: black;
+  font-size: 13px;
+}
+
+.FtwoExp {
+  position: absolute;
+  top: 32px;
+  left: 150px;
+  color: #504c5e;
+  font-size: 11.2px;
+}
+
+.checkFive {
+  position: absolute;
+  top: 266px;
+  z-index: 1;
+  background-color: #d2ebf7;
+  border: 0.5px solid #b3c8d2;
+  width: 493px;
+  height: 65px;
+}
+
+.Show {
+  position: absolute;
+  bottom: -1px;
+  left: 73px;
+  z-index: 2;
+  height: 70px;
+}
+
+.foneExp {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  color: black;
+  font-size: 13px;
+}
+
+.ftwoExp {
+  position: absolute;
+  top: 32px;
+  left: 150px;
+  color: #504c5e;
+  font-size: 11.2px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: 15px;
+  left: 27px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  accent-color: white;
+}
+
+.tWord {
+  position: absolute;
+  bottom: 25px;
+  right: 140px;
+  color: #504c5e;
+  font-size: 11px;
+  z-index: 3;
+}
+
+.tButton {
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+  background: linear-gradient(#e5fcff, #b7e0ff, #86b6e8);
+  border: 0.5px solid #336186;
+  height: 25px;
+  /*25*/
+  width: 111px;
+  /*111*/
+  font-size: 12.4px;
+  z-index: 3;
+  border-radius: 5px;
+  color: #002e74;
+}
+
+
+.tButton:hover{
+  cursor: pointer;
+}
+
+.lineExp {
+  border-left: 2px solid #c2d9e4;
+  z-index: 3;
+  height: 332px;
+  width: 278px;
+  position: absolute;
+  top: 0px;
+  left: 79px;
+}
+.yellowBackground{
+   background-color: #fef8b4;
+}
+
+
+.checklist::-webkit-scrollbar {
+  width: 12px;
+  border-radius: none;
+}
+
+.checklist::-webkit-scrollbar-thumb {
+  background: linear-gradient(#9bbfff, #5e8ddd, #5b8ada);
+  border: 1.5px solid #4f6cac;
+}
+
+.checklist::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background-color: #d2ebf7;
+}
+
+.checklist::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#a4c9ff, #b0d8ff, #9ec9fa, #8db8f1, #6a99ea, #608fe2);
+  cursor: pointer;
+}
+
+.checkOne:hover {
+  background-color: #e6f4fb;
+  cursor: pointer;
+}
+
+.checkTwo:hover {
+  background-color: #e6f4fb;
+  cursor: pointer;
+}
+
+.checkThree:hover {
+  background-color: #e6f4fb;
+  cursor: pointer;
+}
+
+.checkFour:hover {
+  background-color: #e6f4fb;
+  cursor: pointer;
+}
+
+.checkFive:hover {
+  background-color: #e6f4fb;
+  cursor: pointer;
+}
+/* The Sims 3 Expansion */ 

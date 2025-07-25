@@ -16,7 +16,7 @@
 
 <body>
    <div id="wrapper"> 
-    <img src="windows_B.png" id="w_Background"> 
+   <!-- <img src="windows_B.png" id="w_Background"> -->
      <div id="webpage"> 
     <div id="nav-bar">
         <button id="resume_x" onclick="closePage()"><b>X</b></button>
@@ -77,17 +77,16 @@
          <a>
            <div class="blue"></div>
          </a>
-        <!--<a href= index.html>  --> 
-         <button class="welcome" title="Welcome"><b>Welcome</b>
-         </button>
-         </a>
-        <a href= expand.html> <!-- This is Expansion Packs--> 
-         <button class="Exp" title="Choose which expansion and stuff packs to run"><b>Expansions & Stuff</b></button>
-         </a>
+        <!--<a href= index.html> --> 
+         <button class="welcome" title="Welcome" onclick="toWelcome()"><b>Welcome</b></button>
+ <!--       </a> --> 
+<!--       <a href= expand.html> <!-- This is Expansion Packs--> 
+         <button class="Exp" title="Choose which expansion and stuff packs to run" onclick="toExp()"><b>Expansions & Stuff</b></button>
+<!--         </a> --> 
         <!-- <a href= download.html> -->
         <!-- <button class="Down" title="Manage Content you have downloaded"><b>Downloads</b></button> -->
         <button class="Down" title="Coming Soon!"><b>Downloads</b></button>
-         </a>
+      <!--  </a> --> 
     <!--    <button class="Content" title="Managed content from The Store and The Exchange">
      <b>Installed Content</b></button> --> 
      <button class="Content" title="Coming Soon!"><b>Installed Content</b></button>
@@ -159,7 +158,116 @@
          </button>
        </div>
      </div>
-     <!----> 
+     <!--The Sims 3 --> 
+      <!--- Sims 3 Expansion -->
+  <div class="Sims_3">
+    <!-- White Background -->
+    <img src='background.jpg' class="background">
+<!-- Words at the top of Launcher -->
+<h1 class="header">The Sims 3 Game Launcher</h1>
+<!-- Gray Rectangle at the Top -->
+<div class="topper">
+<!-- Close and Minimize Buttons-->
+<!-- <button class="mini"></button> --> 
+<button class="close" onclick="closeSimsExp()"><b>X</b></button>
+</div>
+<!-- Side Bar with Buttons -->
+<div class="side">
+<!-- Sims 3 Logo on Side -->
+<img src='sims3logo.png' class="logo3">
+<!-- Play Button (Enter Game) -->
+<button class="play"><i class="fa fa-play"></i></button>
+<!-- Box that connects side with Corner -->
+<a>
+  <div class="blueExp"></div>
+</a>
+<a href=index.html>
+  <button class="welcome" title="Welcome" onclick="toWelcome()"><b>Welcome</b>
+  </button>
+</a>
+<a href=expand.html>
+  <button class="Exp" title="Choose which expansion and stuff packs to run" onclick="toExp()"><b>Expansions & Stuff</b></button>
+</a>
+<a href= download.html>
+<button class="Down" title="Manage Content you have downloaded"><b>Downloads</b></button>
+  </a>
+<button class="Content" title="Manage installed content from The Store and The Exchange"><b>Installed
+    Content</b></button>
+<button class="Uploads" title="Manage your creations for The Exchange"><b>Uploads</b>
+  <div class="point"><i class="fa-solid fa-circle-exclamation"></i></div>
+</button>
+<b class="version">Version:</b>
+<br>
+<b class="info">1.69.43.024017</b>
+<!-- Background of right side  -->
+<div class="secondExp">
+  <!-- Light blue background in second -->
+  <div class="third">
+<!--  Stop Here  -->
+    <b class="tOneExp">Expansion Packs and Stuff Packs</b>
+    <!-- Grey shape under message -->
+    <div class=tcircle></div>
+    <b class="tTwoExp">Select which of your installed packs you want to play. Changing active perks may affect your
+      save game, <a class=tLink              href=file:///C:/Program%20Files/EA%20Games/The%20Sims%203/Game/Bin/HelpPages/ENG_US/Help_Expansions.html>learn
+        more</a>.</b>
+    <!-- Box inside third -->
+    <div class="tBox">
+      
+      <!-- Active Box -->
+      <div class="active"> <b class=act>Active</b></div>
+
+      <!-- Title Box --> 
+      <div class="title"><b class=tit>Title</b></div>
+
+      <div class="checklist">
+        <!-- First Checkbox -->
+        <div class="checkOne">
+          <label><input type="checkbox"></label>
+          <img src='/Expand/ambitions.png' class="Amb">
+          <b class="OoneExp">The Sims™ 3 Ambitions</b>
+          <br>
+          <b class="OtwoExp">Go on the job as a firefighter, private investigator, and ghost hunter.</b>  
+          
+      </div>
+    <!-- Second Checkbox --> 
+      <div class="checkTwo"><label><input type="checkbox"></label>
+        <img src='/Expand/generations.png' class="Gen"> 
+        <b class="ToneExp">The Sims™ 3 Generation</b>
+        <br>
+        <b class="TtwoExp">Sims of every age have new life moments to experience.</b> 
+    </div>
+    <!-- Third Checkbox --> 
+        <div class="checkThree"><label><input type="checkbox"></label>
+           <img src='/Expand/pets.png' class=Pets> 
+           <b class="toneExp">The Sims™ 3 Pets</b>
+          <br>
+          <b class="ttwoExp">Sometimes animals are the best companions.</b>
+        </div>
+
+    <!-- Fourth Checkbox -->   
+        <div class="checkFour"><label><input type="checkbox"></label>
+          <img src='/Expand/seasons.png' class=Sea> 
+          <b class="FoneExp">The Sims™ 3 Seasons</b>
+          <b class="FtwoExp">Each season brings new activities, festivals, and celebrations.</b>
+        </div>
+
+    <!-- Fifth Checkbox -->   
+        <div class="checkFive">
+          <label><input type="checkbox"></label>
+          <img src='/Expand/showtime.png' class=Show> 
+          <b class="foneExp">The Sims™ 3 Showtime</b>
+          <b class="ftwoExp">It's time to hop onstage and show the world what you've got.</b>
+        </div>
+ <!--     <div class="line"></div> --> 
+      </div>
+      <b class="tWord">Don't see your packs?</b>
+      <button class="tButton"><b>Install Packs</b></button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Sims 3 Expansion -->
     <div id="IE_container">
       <img src="internet_explorer.png" id="IE_icon">
       <span id="IE_text" onclick="showPage()">Internet <br> Explorer</span>

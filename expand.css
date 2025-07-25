@@ -4,33 +4,57 @@ html, body {
   overflow: hidden;
 }
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: black; /* Optional: fallback background color */
-  background: linear-gradient(to bottom, black, #313030); /*Change Gradient (#1e1e1e)*/ 
+ /* background: black; 
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #002e74;
+  background-image: url('windows_B.png'); 
+  background-repeat: no-repeat;
+ background-size: contain;
+  background-position: center;
+  background-position-y: center; 
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%; 
+  overflow: hidden;  
+  color: #002e74; */ 
+  background: black;  
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-image: url('windows_B.png'); 
+  background-repeat: no-repeat;
+ background-size: contain;
+  background-position: center;
+  background-position-y: center; 
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%; 
+  overflow: hidden;  
+  color: #002e74; 
 }
 #wrapper{
-  position: relative; 
+ position: relative; 
   width: 100%;
-  height: 100%;
+  height: 100%; 
   display: flex;   
   align-items: center; 
-  justify-content: center;  
-}
+  justify-content: center;   
+} 
+
+/*#Sims_container{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+} */ 
 
 .Sims_3{
- /* position: absolute;
-  top: 40px; */
+  position: absolute;
+  top: 130px;  
   min-width: 840px;
   min-height: 602px;
   margin: auto;
   z-index: 5; 
-  display: none;  
-  position: absolute;
+ /* display: none;  */ 
+ /* position: absolute; */ 
 }
 #w_Background {
   position: absolute;
@@ -44,62 +68,151 @@ body {
 How to make it so a image cant exit a div
 */ 
 
+/*#icon_container{
+  display: flex;
+  flex-direction: column;
+  align-content:flex-start;
+  justify-content:space-around; 
+}  */ 
 
 #IE_icon{
-  position: absolute; 
-  z-index: -1;
+/*  z-index: 1;
   height: 50px; 
+ /* position: absolute; 
   left:-394px;  
-  bottom: 195px;  
-}
-#sims_icon{
-  position: absolute; 
+  bottom: 195px;  */ 
+ /* position: absolute; 
   z-index: 1;
   height: 50px; 
-  right: 250px; /*250px*/ 
-  bottom: 120px;   /*120px*/ 
-}
-
-#game_icon{
-  position: absolute; 
+  left:-570px;  /*-394px;
+    top: -410px; */ 
+    position: absolute; 
   z-index: 1;
-  height: 55px; 
-  right: 250px; ; /*255*/
-  bottom: 30px;   
+  height: 50px; 
+  left:-570px;  /*-394px;*/ 
+    top: -410px; 
 }
 
 #IE_text{
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace;
+   font-size: 12px;
+   color: white;
+   z-index: -1;
+  /* position: absolute; 
+  /* right: 35vw;
+   bottom: 20vw; 
+   bottom: 180px; 
+   left:-385px;  /*260  
+   font-family: 'Courier New', Courier, monospace;
+   position: absolute; 
+   top: -370px; 
+   left:-560px;  /*260*/ /*-385px
+   font-size: 12px;
+   color: white;
+   z-index: 1; */ 
+   font-family: 'Courier New', Courier, monospace;
+   position: absolute; 
+   top: -370px; 
+   left:-560px;  /*260*/ /*-385px*/ 
+   font-size: 12px;
+   color: white;
+   z-index: 1; 
+ }
+#sims_icon{
+/*  z-index: 1;
+  height: 50px; /*55px*/ 
+/*  width: 80px; 
+/*  position: absolute;   
+  right: 450px; 
+  bottom: 450px;  */ 
+ /* position: absolute; 
+  z-index: 1;
+  height: 50px; 
+  right: 250px;
+  top: -330px;
+  left:-565px */ 
   position: absolute; 
- /* right: 35vw;
-  bottom: 20vw; */
-  bottom: 180px; 
-  left:-385px;  /*260*/
-  font-size: 12px;
-  color: white;
-  z-index: -1; 
+  z-index: 1;
+  height: 50px; 
+  right: 250px;
+  top: -330px;
+  left:-565px
 }
 
 #Sims_text{
-  font-family: 'Courier New', Courier, monospace; 
-  left : 20px; /*230*/
-  top: 20px; /*-120px*/ 
-  font-size: 12px;
-  color: white;
-  z-index: 1; 
-  width: 45px; 
-  text-align:center; 
-}
-
-#Game_text{
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute; 
-    bottom: -10px; 
-    right : 205px; /*270*/
+  /*  font-family: 'Courier New', Courier, monospace; 
     font-size: 12px;
     color: white;
     z-index: 1;
-  width: 10px; 
+    width: 45px; 
+  text-align:center; */ 
+  /* left : 20px; 
+    top: 20px; 
+    position: absolute; */ 
+ /*   font-family: 'Courier New', Courier, monospace; 
+    top: -275px; 
+    left:-565px;
+    font-size: 12px;
+    color: white;
+    z-index: 1; 
+  width:73px; 
+  position: absolute; */ 
+  font-family: 'Courier New', Courier, monospace; 
+  top: -275px; 
+  left:-565px;
+  font-size: 12px;
+  color: white;
+  z-index: 1; 
+width:73px; 
+position: absolute; 
+  }
+
+#game_icon{
+ /* z-index: 1;
+  height: 55px; /*55px*/ 
+ /* width: 65px; 
+ /* position: absolute; 
+  right: 250px; ; /*255
+  bottom: 30px;   */ 
+ /* position: absolute; 
+  z-index: 1;
+  height: 55px; 
+ top: -250px; 
+ left:-555px; */ 
+ position: absolute; 
+ z-index: 1;
+ height: 55px; 
+top: -250px; 
+left:-555px;
+}
+
+#Game_text{
+ /*   font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: white;
+    z-index: 1;
+    width: 10px; */ 
+  /*  position: absolute; 
+    bottom: -10px; 
+    right : 205px; /*270*/     
+ /*   font-family: 'Courier New', Courier, monospace;
+    position: absolute; 
+    top: -195px; 
+    left:-555px;
+    font-size: 12px;
+    color: white;
+    z-index: 1;
+  width: 45px; 
+  text-align:center; */ 
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute; 
+  top: -195px; 
+  left:-555px;
+  font-size: 12px;
+  color: white;
+  z-index: 1;
+width: 45px; 
+text-align:center; 
 }
 
 #IE_icon:hover{
