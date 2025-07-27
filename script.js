@@ -6,40 +6,41 @@ function closePage(){
   document.getElementById("webpage").style.display = 'none';
 }
 function showSims(){
-  document.getElementById("Sims_3").style.display = 'block';
+  document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
    localStorage.setItem("showSims", "true");
 }
 
 window.onload = function(){ // Adding a flag
   if(showSims() == true){
-    document.getElementById("Sims_3").style.display = 'block';
+    document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
   }
   else{
- document.getElementById("Sims_3").style.display = 'none';
+ document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
   }
 }
 
 function closeSims(){
-  document.getElementById("Sims_3").style.display = 'none';
-   localStorage.setItem("showSims", "false");
+  document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
+  localStorage.setItem("showSims", "false");
 }
 
-function showSimsExp(){
-  document.getElementByClassName("Sims_3").style.display = 'block';
-   localStorage.setItem("showSims", "true");
+function closeSimsExp(){
+  document.getElementByClassName("Expansion_Sims")[0].style.display = 'none';
+  localStorage.setItem("showSims", "true");
 }
 
-function toWelcome(){
- document.getElementById("Sims_3").style.display = 'block'; 
- document.getElementByClassName("Sims_3").style.display = 'none';
- document.getElementById("Sims_3").style.boxShadow = '0 0 3px 1px white'; 
-
+function toWelcome(){ 
+ document.getElementsByClassName("Expansion_Sims")[0].style.display = 'none';
+ document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
+ document.getElementsByClassName("welcome")[0].style.boxShadow = '0px 0px 3px 1px white'; 
+ document.getElementsByClassName("Exp")[0].style.boxShadow = 'none'; 
 } 
 
 function toExp(){
- document.getElementByClassName("Sims_3").style.display = 'block'; 
- document.getElementById("Sims_3").style.display = 'none';
- document.getElementByClassName("Sims_3").style.boxShadow = '0 0 3px 1px white'; 
+ document.getElementsByClassName("Expansion_Sims")[0].style.display = 'block'; 
+ document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
+ document.getElementsByClassName("Exp")[0].style.boxShadow = '0px 0px 3px 1px white'; 
+ document.getElementsByClassName("welcome")[0].style.boxShadow = 'none'; 
 } 
 
 /* Number Game JS */ 
@@ -140,4 +141,9 @@ function closeGame(){
   document.getElementById("Number_wrapper").style.display = 'none';
    localStorage.setItem("Number_wrapper", "false");
 }
-/* */ 
+/* 
+Add Music Webpage 
+Get Functions to Work
+Actually make it so you can visit the site 
+Get rid of expand.html 
+*/ 

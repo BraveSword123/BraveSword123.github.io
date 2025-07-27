@@ -490,7 +490,7 @@ h4{
 
 /* Stop Here */ 
 
-#Sims_3 {
+.Welcome_Sims {
   min-width: 840px;
   min-height: 602px;
   margin: auto;
@@ -499,7 +499,7 @@ h4{
   position: absolute;
 }
 
-.Sims_3{
+.Expansion_Sims{
   position: absolute;
   top: 130px;  
   min-width: 840px;
@@ -507,7 +507,7 @@ h4{
   margin: auto;
   z-index: 5; 
   display: none;   
-  position: absolute; 
+  position: absolute;
 }
 
 .background {
@@ -617,6 +617,7 @@ h4{
   background: linear-gradient(#b4ccff, #75a1ff);
   border: 1px solid #002e72;
   z-index: 3;
+  box-shadow: 0 0 3px 1px white; 
 }
 
 .Exp {
