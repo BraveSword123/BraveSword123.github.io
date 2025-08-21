@@ -7,41 +7,48 @@ function closePage(){
 }
 function showSims(){
   document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
-   localStorage.setItem("showSims", "true");
+  // localStorage.setItem("showSims", "true");
 }
 
-window.onload = function(){ // Adding a flag
+/*window.onload = function(){ // Adding a flag 
   if(showSims() == true){
     document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
   }
   else{
  document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
   }
-}
+} */ 
 
 function closeSims(){
   document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
-  localStorage.setItem("showSims", "false");
+//   localStorage.setItem("showSims", "false");
 }
 
 function closeSimsExp(){
-  document.getElementByClassName("Expansion_Sims")[0].style.display = 'none';
-  localStorage.setItem("showSims", "true");
+  document.getElementsByClassName("Expansion_Sims")[0].style.display = 'none';
+//   localStorage.setItem("showSimsExp", "false");
+}
+
+ function setActiveTab(selector) {
+  document.querySelectorAll('.side .welcome, .side .Exp, .side .Down, .side .Content, .side .Uploads')// . side .welcome,
+    .forEach(btn => btn.classList.remove('tab-active')); // Problem  
+    // When its selected, add the shadow 
+  document.querySelectorAll(selector).forEach(btn => btn.classList.add('tab-active'));
 }
 
 function toWelcome(){ 
- document.getElementsByClassName("Expansion_Sims")[0].style.display = 'none';
- document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
- document.getElementsByClassName("welcome")[0].style.boxShadow = '0px 0px 3px 1px white'; 
- document.getElementsByClassName("Exp")[0].style.boxShadow = 'none'; 
-} 
+  document.getElementsByClassName("Expansion_Sims")[0].style.display = 'none';
+  document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
+  setActiveTab('.side .welcome');   
+ // document.querySelector('.side .Exp').classList.remove('tab-active');
+}
 
 function toExp(){
- document.getElementsByClassName("Expansion_Sims")[0].style.display = 'block'; 
- document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
- document.getElementsByClassName("Exp")[0].style.boxShadow = '0px 0px 3px 1px white'; 
- document.getElementsByClassName("welcome")[0].style.boxShadow = 'none'; 
-} 
+  document.getElementsByClassName("Expansion_Sims")[0].style.display = 'block'; 
+  document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
+  setActiveTab('.side .Exp');   
+ // document.querySelector('.side .welcome').classList.remove('tab-active');   
+}
 
 /* Number Game JS */ 
 // Declares 
@@ -125,24 +132,26 @@ img.title = images[which];
 
 function showGame(){
   document.getElementById("Number_wrapper").style.display = 'block';
-   localStorage.setItem("showGame", "true");
+  // localStorage.setItem("showGame", "true");
 }
 
-window.onload = function(){ // Adding a flag
+/* window.onload = function(){ // Adding a flag
   if(showGame() == true){
     document.getElementById("Number_wrapper").style.display = 'block';
   }
   else{
  document.getElementById("Number_wrapper").style.display = 'none';
   }
-}
+} */ 
 
 function closeGame(){
   document.getElementById("Number_wrapper").style.display = 'none';
-   localStorage.setItem("Number_wrapper", "false");
+ //   localStorage.setItem("Number_wrapper", "false");
 }
 /* 
-Add Music Webpage 
+Add Music Webpage
+Business Game 
+IDK About College Game tho because that code is really big  
 Get Functions to Work
 Actually make it so you can visit the site 
 Get rid of expand.html 
