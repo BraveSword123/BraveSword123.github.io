@@ -11,9 +11,11 @@ This website is designed to look and feel like the homescreen of a retro Windows
 ---
 
 ## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/570a7c71-99ce-4a70-bd48-64c03d2c45b6)
-![image](https://github.com/user-attachments/assets/4718a9b0-b577-44a1-b079-7c101e36f176)
-![image](https://github.com/user-attachments/assets/8f6b6e0a-4c89-406c-bec0-95d34dec82e2)
+<img width="3000" height="1726" alt="image" src="https://github.com/user-attachments/assets/b8d45628-e750-49c4-87b1-306e9884cdf9" />
+<img width="3000" height="1718" alt="image" src="https://github.com/user-attachments/assets/95364156-f9b4-4baa-a2fc-2a47c826cf91" />
+<img width="2998" height="1720" alt="image" src="https://github.com/user-attachments/assets/0a1ba5e3-3d45-4724-a8dc-ef89f7b40076" />
+<img width="3000" height="1722" alt="image" src="https://github.com/user-attachments/assets/a03e9afc-417d-46a2-aeda-55487d655591" />
+<img width="3000" height="1724" alt="image" src="https://github.com/user-attachments/assets/07846976-066c-4d3b-bc13-66a13f649a52" />
 
 ---
 
