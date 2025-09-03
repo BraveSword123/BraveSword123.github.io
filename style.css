@@ -1,13 +1,9 @@
-html, body {
+ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden; 
 } 
 body {
- /* display: flex;
-  align-items: center;
-  justify-content: center; */ 
-   /* background: linear-gradient(to bottom, black, #313030); */ 
   background: black;  
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -38,16 +34,12 @@ body {
   z-index: -1;
   height:750px; 
 }
-/* Need to figure out how stay in one place
-How to make it so a image cant exit a div
-*/ 
-
 
 #IE_icon{
   position: absolute; 
   z-index: 1;
   height: 50px; 
-  left:-570px;  /*-394px;*/ 
+  left:-570px;  
     top: -410px; 
 }
 
@@ -55,7 +47,7 @@ How to make it so a image cant exit a div
   font-family: 'Courier New', Courier, monospace;
   position: absolute; 
   top: -370px; 
-  left:-560px;  /*260*/ /*-385px*/ 
+  left:-560px;  
   font-size: 12px;
   color: white;
   z-index: 1; 
@@ -77,28 +69,28 @@ How to make it so a image cant exit a div
   font-size: 12px;
   color: white;
   z-index: 1; 
-width:73px; 
-position: absolute; 
+  width:73px; 
+  position: absolute; 
 }
 
 #game_icon{
   position: absolute; 
   z-index: 1;
   height: 55px; 
+ left: -558px; 
  top: -250px; 
- left:-555px;
 }
 
 #Game_text{
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute; 
-    top: -195px; 
-    left:-555px;
-    font-size: 12px;
-    color: white;
-    z-index: 1;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute; 
+  top: -191px;
+  left:-553px; 
+  font-size: 12px;
+  color: white;
+  z-index: 1;
   width: 45px; 
-  text-align:center; 
+ text-align:center; 
 }
 
 #IE_icon:hover{
@@ -110,6 +102,14 @@ position: absolute;
 
 #IE_container{
    position: relative;  
+}
+
+#music_icon{
+  position: absolute; 
+  z-index: 1;
+  height: 55px; 
+ top: -140px; 
+ left:-552px;
 }
 
 /*End Here */ 
@@ -137,9 +137,10 @@ position: absolute;
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%; /*???*/ 
+  width: 100%; 
   height: 20px;
-  background-color: rgb(230, 202, 247); /*191970*/ 
+  background-color: rgb(230, 202, 247);
+  position: sticky;
 }
 
 #resume_x{
@@ -147,312 +148,32 @@ position: absolute;
  right: 0px; 
  background: mediumpurple; 
  color: rgb(0, 0, 0); 
+ border: 1.5px solid black; 
+ border-radius: 2px; 
 }
 
-#Name{
+.resume_titles{
   font-family: "Jacquard 12", serif;
-  text-align: center; 
   color: hotpink; 
   font-weight: 400;
   font-style: normal;
   font-size: 50px;
   text-decoration: underline; 
 }
-#Ed{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: hotpink; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  text-decoration: underline; 
-}
-h3{
-  margin-top: -25px;
-  font-family: "Jacquard 12", serif;
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px; 
-  position: absolute;
-  left: 270px; 
-  top: 105px;
-}
 
-#GitHub{
-  margin-top: -25px;
-  font-family: "Jacquard 12", serif;
+#resume_flex{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
   color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  left: 150px; 
-}
-/* This only works with headers? */ 
-h4{
-  margin-top: -20px;
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-}
-#Ed1{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 175px;
-  left: 80px;
-}
+  font-family: monospace;
+  font-size: 13px;
+  margin-left: 5px; 
+  margin-right: 5px;   
+  }
 
-#Ed2{
-  font-family: "Jacquard 12", serif;
-  /*  margin: 0 auto; */ 
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 225px;
-  left: 160px;
-}
-
-#Ed3{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 200px;
-  left: 140px;
-}
-
-#PaA{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: hotpink; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  text-decoration: underline; 
-  position: absolute;
-  top: 220px;
-  left: 185px; 
-}
-
-#GWC_Title{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 280px;
-  left: 165px;
-   text-decoration: underline;
-}
-
-#GWC1{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 300px;
-  left: 10px
-}
-
-#GWC2{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 340px;
-  left: 20px
-}
-
-#GWC2{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 340px;
-  left: 20px
-}
-
-#GWC3{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 370px;
-  left: 20px
-}
-
-#GWC4{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 400px;
-  left: 20px
-}
-
-#HackCC-Title{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 440px;
-  left: 210px;
-   text-decoration: underline;
-}
-
-#HackCC1{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 470px;
-  left: 20px
-}
-
-#HackCC2{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 500px;
-  left: 20px
-}
-
-#Work_Title{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: hotpink; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  text-decoration: underline; 
-  position: absolute;
-  top: 550px;
-  left: 210px
-}
-
-#Lib1{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 590px;
-  left: 200px;
-  text-decoration: underline;
-}
-
-#Lib2{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 620px;
-}
-
-#Lib3{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 665px;
-}
-
-#Lib4{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 695px;
-}
-
-#Skill_Title{
-  font-family: "Jacquard 12", serif;
-  color: hotpink; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  text-decoration: underline; 
-  position: absolute;
-  top: 720px;
-  left: 120px
-}
-
-#Skill1{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 755px;
-  left: 20px
-}
-
-#Skill2{
-  font-family: "Jacquard 12", serif;
-  text-align: center; 
-  color: white; 
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  position: absolute; 
-  top: 780px;
-  left: 20px
-}
 /*Stop Here*/ 
 
 #IE_text:hover{
@@ -465,14 +186,14 @@ h4{
 
 #IE_text:active{
   background-color: blue;
-  border: 0.5px dotted white;
+  border: 1px dotted white;
   cursor: pointer;
   display: block; 
 }
 
 #Sims_text:active{
   background-color: blue;
-  border: 0.5px dotted white;
+  border: 1px dotted white;
   cursor: pointer;
   display: block; 
 }
@@ -483,11 +204,40 @@ h4{
 
 #Game_text:active{
   background-color: blue;
-  border: 0.5px dotted white;
+  border: 1px dotted white;
   cursor: pointer;
   display: block;
 }
 
+#musicIcon{
+  position: absolute; 
+  z-index: 1;
+  height: 50px; 
+  left:-10px;   
+  top: -440px; 
+}
+
+#Music_text{
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute; 
+  top: -82px; 
+  left: -571px; 
+  font-size: 12px;
+  color: white;
+  z-index: 1; 
+  text-align: center; 
+}
+
+ #Music_text:hover{
+  cursor: pointer;
+}
+
+#Music_text:active{
+  background-color: blue;
+  border: 1px dotted white;
+  cursor: pointer;
+  display: block;
+} 
 /* Stop Here */ 
 
 .Welcome_Sims {
@@ -524,13 +274,11 @@ h4{
   width: 822px;
   opacity: 0.7;
   position: absolute;
-  /* top: 0px; 
-  z-index: 10; */
   top: 12px;
   left: 10px;
   border-radius: 5px;
   text-align: center;
-}
+} 
 
 .header {
   font-size: 14px;
@@ -563,7 +311,6 @@ h4{
   font-size: 20px;
   position: relative;
   top: 2px;
-  /*15*/
   right: -390px;
   z-index: 3; 
 }
@@ -571,14 +318,11 @@ h4{
 .side {
   background-color: #97cbff;
   width: 210px;
-  /*215*/
   height: 536px;
-  /*676*/
   border: 9px solid #55709d;
   border-radius: 12px;
   position: absolute;
   top: 43px;
-  /*60*/
   left: 10px;
 }
 
@@ -595,7 +339,6 @@ h4{
   border-color: #c4ced2;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   width: 75px;
-  /*Same*/
   height: 75px;
   font-size: 35px;
   border-radius: 35px;
@@ -694,25 +437,21 @@ h4{
   position: absolute;
   left: 2px;
   top: 125px;
-  /*190*/
   height: 410px;
-  /*50 dif --> width*/
   width: 330px;
-  /*- 2*/
-  /*315*/
   z-index: 2; 
 }
 
-.corner {
+ .corner {
   width: 580px;
   height: 540px;
-  position: absolute;
+  position: absolute; 
   top: 43px;
   left: 243px;
   border: 8px solid #506b98;
   border-radius: 5px;
   opacity: 0.95;
-}
+} 
 
 .second {
   background-color: #42669f;
@@ -727,7 +466,6 @@ h4{
 .green {
   width: 25px;
   height: 25px;
-  /* background-color: #82b638; */
   background: linear-gradient(#8fc344, #689a25);
   border: 5px solid #4c4c4c;
   border-radius: 15px;
@@ -741,10 +479,8 @@ h4{
   top: 10px;
   left: 50px;
   width: 569px;
-  /*579. 564*/
   height: 534px;
-  /*540*/
-  z-index: 3;
+  z-index: 1;
 }
 
 .upper {
@@ -755,55 +491,47 @@ h4{
   color: white;
   width: 294px;
   height: 150px;
-  /*65*/
   border: 1px solid #40598c;
-  z-index: 2;
-}
+   z-index: 100;  
+}  
 
 .top {
   font-size: 11px;
   position: absolute;
   top: 0px;
   left: 105px;
-}
+} 
 
 .bottom {
   position: absolute;
   left: 105px;
   top: 35px;
-}
+} 
 
-.logo4 {
+ .logo4 {
   position: absolute;
   top: 3px;
   left: 18px;
   width: 80px;
   height: 80px;
-}
+}  
 
 .right {
   position: absolute;
   width: 100px;
   height: 100px;
   color: pink;
-}
+} 
 
-.info2 {
+ .info2 {
   font-size: 11px;
   text-align: left;
   position: absolute;
   top: 70px;
   left: 104px;
-  /*94*/
-  /*84*/
-}
+ }  
 
-/*.box2{
-  z-index: 3;
-  color: white; 
-  width: 290px; 
-}*/
-.line {
+  .line {
   border-left: 6px solid #55709d;
   /* Border Colors */
   height: 541px;
@@ -812,7 +540,7 @@ h4{
   top: 0px;
   right: 1px;
   z-index: 3;
-}
+}   
 
 .transparent {
   width: 273px;
@@ -822,7 +550,7 @@ h4{
   z-index: 4;
   position: absolute;
   right: 7px;
-}
+} 
 
 .one {
   width: 258px;
@@ -874,8 +602,6 @@ h4{
 }
 
 .ID {
-  /*width: 80px; 
-  height: 80px; */
   z-index: 6;
   position: absolute;
   bottom: 10px;
@@ -1049,7 +775,6 @@ h4{
   color: #1e3c79;
   font-size: 25px;
   z-index: 3;
-  /* box-shadow: 0 0 3px 3px white; */
 }
 
 .blue {
@@ -1080,8 +805,8 @@ h4{
   border: 3px, solid, deeppink;
   font-family: "Old Standard TT";
   position: absolute;
-  top: 5px; /*15*/ 
-  left: 762px; /*655*/ /*750*/ 
+  top: 5px; 
+  left: 762px; 
   cursor: pointer; 
   height:40px; 
 }
@@ -1101,7 +826,7 @@ h4{
 #Credit{
   position: absolute;
   top: 380px;
-  left: 1px; /*20*/ 
+  left: 5px; 
   font-family: "Old Standard TT";
   color: black
 }
@@ -1123,7 +848,7 @@ position: absolute;
 #Game_title{
   position: absolute;
   color: black;
-  left: 180px; /*200 */ 
+  left: 180px; 
   font-size: 50px;
   top: 40px;
   font-family: "Old Standard TT";
@@ -1218,23 +943,6 @@ width:800px;
   cursor: pointer;
 }
 
-
-
-/* */ 
-
-/*.welcome:focus{
-  box-shadow: 0 0 3px 1px white;
-}*/
-/*.blue:focus+.welcome{
-  position: absolute;
-  top: 278px; 
-  left: 7px; 
-  width: 220px; 
-  height: 40px;
-  background-color: #58729d;
-  border-radius: 5px;
-  z-index: 2;
-} */
 .tdiv:hover {
   background: linear-gradient(#9dc619, #25a03c);
   color: white;
@@ -1288,21 +996,21 @@ width:800px;
 
 .upper:hover {
   height: 120px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .upper:not(:hover) {
   height: 65px;
 }
 
-.info2:not(:hover) {
+/* .info2:not(:hover) {
   height: 65px;
-}
+} 
 
-.info2:hover {
+ .info2:hover {
   height: 120px;
   cursor: pointer;
-}
+} */ 
 
 .login:hover {
   color: white;
@@ -1351,7 +1059,6 @@ width:800px;
   border-radius: 5px;
   width: 578px;
   height: 544px;
-  /*541*/
   z-index: 1;
   opacity: 0.9;
 }
@@ -1364,7 +1071,6 @@ width:800px;
   width: 220px;
   height: 40px;
   background-color: #42669f;
-  /* #58729d*/
   border-radius: 5px;
   z-index: 2;
   opacity: 0.9;
@@ -1423,9 +1129,7 @@ width:800px;
   top: 55px;
   left: 10px;
   font-size: 12.5px;
-  /*12*/
   height: 23px;
-  /*21*/
   width: 80px;
   background: linear-gradient(#e5fcff, #b7e0ff, #86b6e8);
   border: 0.5px solid #336186;
@@ -1436,7 +1140,6 @@ width:800px;
   position: absolute;
   top: 5px;
   left: 26px;
-  /*22*/
 }
 
 .title {
@@ -1474,7 +1177,6 @@ width:800px;
   background-color: #d2ebf7;
   border: 0.5px solid #b3c8d2;
   width: 493px;
-  /*79*/
   height: 65px;
 }
 
@@ -1660,9 +1362,7 @@ input[type="checkbox"] {
   background: linear-gradient(#e5fcff, #b7e0ff, #86b6e8);
   border: 0.5px solid #336186;
   height: 25px;
-  /*25*/
   width: 111px;
-  /*111*/
   font-size: 12.4px;
   z-index: 3;
   border-radius: 5px;
@@ -1733,3 +1433,183 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 /* The Sims 3 Expansion */ 
+
+/* My Music Player */ 
+#mainMusic{
+  position: absolute; 
+  width: 650px; 
+  height: 550px; 
+  background-color: rgb(252, 255, 217);
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 2; 
+  display: none; 
+ font-family: Forum;
+}
+
+#musicTitle{
+  position: absolute; 
+  font-size: 40px; 
+  color: rgb(178, 162, 255); 
+  top: 30px;
+  margin: 5px;  
+}
+
+#musicTop{
+  position: absolute; 
+  width: 650px; 
+  height: 30px; 
+  background-color: rgb(255, 253, 253); 
+  z-index: 3; 
+  left: 0; 
+  border-bottom: 1px solid black; 
+  font-size: 22px;  
+}
+
+ #musicLink{
+  position: absolute; 
+  left: 3px;  
+  top: 3px; 
+} 
+
+#musicButton{
+  position: absolute; 
+  background-color: rgb(255, 253, 253); 
+  z-index:5;
+  height: 30px; 
+  top: 0; 
+  right: 0; 
+  border-top: none; 
+  border-right: none; 
+  border-left: 1px solid black; 
+  border-bottom: none; 
+  font-size: 25px;
+  font-family: Forum;
+  font-weight: 500; 
+}
+
+#musicButton:hover{
+  cursor:pointer; 
+  background-color: rgb(255, 250, 192); 
+  transition: 0.5s;  
+}
+
+#musicButton:active{
+  cursor:pointer; 
+  background-color: rgb(255, 245, 139); ;
+  transition: 0.2s; 
+}
+
+#musicPara{
+  position: absolute; 
+  top: 68px; 
+  margin: 5px; 
+  font-size: 14px; 
+}
+
+#featuresMusic{
+  position: absolute; 
+  font-size: 40px; 
+  color: rgb(178, 162, 255); 
+  margin: 5px;  
+  top: 170px;
+  right: 10px;  
+}
+
+#listMusic{
+  position: absolute; 
+  top: 200px; 
+  right: 10px; 
+  text-align: right;
+  list-style-type: none;
+  font-size: 12.5px; 
+}
+
+#musicFooter{
+  position: absolute; 
+  width: 650px; 
+ height: 45px; 
+  background-color: rgb(235, 230, 255); 
+  z-index: 5; 
+  bottom: 0; 
+  font-size: 30px; 
+}
+
+#musicInfo{
+  position: absolute; 
+  background-color: white; 
+  height: 80px;
+  width: 203px;
+  bottom: 50px;   
+  font-size: 12.6px; 
+  font-family: Digital Numbers;
+  margin: 20px; 
+  color: rgb(178, 162, 255); 
+  border: 2px solid;
+  padding-top: 5px; 
+  padding-left: 5px; 
+}
+
+#lianaFlores{
+  position: absolute; 
+  width: 280px; 
+  top: 192px;
+  margin: 10px;  
+}
+
+#japaneseBreakfast{
+  position: absolute;
+ width: 290px; 
+ bottom: 55px; 
+  right: 10px; 
+}
+
+ #musicNav{
+  position: absolute;
+  top: 5px; 
+  right: 42%; 
+} 
+
+#backMusic:hover{
+  color: rgb(178, 162, 255); 
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+#backMusic:active{
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+#playMusic:hover{
+  color: rgb(178, 162, 255); 
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+#playMusic:active{
+  color: white; 
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+#forwardMusic:hover{
+  color: rgb(178, 162, 255); 
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+#forwardMusic:active{
+  color: white; 
+  cursor: pointer; 
+  transition: 0.2s;
+}
+
+#musicCredit{
+  z-index: 5; 
+  position: absolute; 
+  bottom: 50px;  
+  left: 2px; 
+}
+/* My Music Player */ 

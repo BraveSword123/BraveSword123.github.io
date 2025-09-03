@@ -7,31 +7,19 @@ function closePage(){
 }
 function showSims(){
   document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
-  // localStorage.setItem("showSims", "true");
 }
-
-/*window.onload = function(){ // Adding a flag 
-  if(showSims() == true){
-    document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
-  }
-  else{
- document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
-  }
-} */ 
 
 function closeSims(){
   document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
-//   localStorage.setItem("showSims", "false");
 }
 
 function closeSimsExp(){
   document.getElementsByClassName("Expansion_Sims")[0].style.display = 'none';
-//   localStorage.setItem("showSimsExp", "false");
 }
 
  function setActiveTab(selector) {
-  document.querySelectorAll('.side .welcome, .side .Exp, .side .Down, .side .Content, .side .Uploads')// . side .welcome,
-    .forEach(btn => btn.classList.remove('tab-active')); // Problem  
+  document.querySelectorAll('.side .welcome, .side .Exp, .side .Down, .side .Content, .side .Uploads')
+    .forEach(btn => btn.classList.remove('tab-active'));
     // When its selected, add the shadow 
   document.querySelectorAll(selector).forEach(btn => btn.classList.add('tab-active'));
 }
@@ -40,14 +28,12 @@ function toWelcome(){
   document.getElementsByClassName("Expansion_Sims")[0].style.display = 'none';
   document.getElementsByClassName("Welcome_Sims")[0].style.display = 'block';
   setActiveTab('.side .welcome');   
- // document.querySelector('.side .Exp').classList.remove('tab-active');
 }
 
 function toExp(){
   document.getElementsByClassName("Expansion_Sims")[0].style.display = 'block'; 
   document.getElementsByClassName("Welcome_Sims")[0].style.display = 'none';
-  setActiveTab('.side .Exp');   
- // document.querySelector('.side .welcome').classList.remove('tab-active');   
+  setActiveTab('.side .Exp');    
 }
 
 /* Number Game JS */ 
@@ -58,8 +44,6 @@ let i = 0;
 
 // Generate a random number between 1 and 1000 (inclusive)
 const randomNumber = Math.floor(Math.random() * (1000 - 1)) + 1;
-
-// document.getElementById("demo2").innerHTML = randomNumber; 
 
 // Create for loop for input
 function returnText() {
@@ -90,22 +74,18 @@ if(numInput == (randomNumber+5) || numInput == (randomNumber-5)){
 document.getElementById("demo").innerHTML = "Youre number was " + randomNumber + ". You were 5 numbers off!";  
 } 
 
-// 
 else if(numInput == (randomNumber+4) || numInput == (randomNumber-4)){
 document.getElementById("demo").innerHTML = "Youre number was " + randomNumber + ". You were 4 numbers off!";
 }
 
-//
 else if(numInput == (randomNumber+3) || numInput == (randomNumber-3)){
  document.getElementById("demo").innerHTML = "Youre number was " + randomNumber + ". You were 3 numbers off!";
 }
 
-//  
 else if(numInput == (randomNumber+2) || numInput == (randomNumber-2)){
 document.getElementById("demo").innerHTML = "Youre number was " + randomNumber + ". You were 2 numbers off!";
 }
 
-// 
 else if(numInput == (randomNumber+1) || numInput == (randomNumber-1)){
  document.getElementById("demo").innerHTML = "Youre number was " + randomNumber + ". You were 1 numbers off!";
 }
@@ -115,7 +95,6 @@ else if(numInput == (randomNumber+1) || numInput == (randomNumber-1)){
 }  
 }
 
-// 
 var images = [
   'Background.gif',
   'Background2.gif',
@@ -132,27 +111,93 @@ img.title = images[which];
 
 function showGame(){
   document.getElementById("Number_wrapper").style.display = 'block';
-  // localStorage.setItem("showGame", "true");
 }
-
-/* window.onload = function(){ // Adding a flag
-  if(showGame() == true){
-    document.getElementById("Number_wrapper").style.display = 'block';
-  }
-  else{
- document.getElementById("Number_wrapper").style.display = 'none';
-  }
-} */ 
 
 function closeGame(){
   document.getElementById("Number_wrapper").style.display = 'none';
- //   localStorage.setItem("Number_wrapper", "false");
 }
-/* 
-Add Music Webpage
-Business Game 
-IDK About College Game tho because that code is really big  
-Get Functions to Work
-Actually make it so you can visit the site 
-Get rid of expand.html 
-*/ 
+
+/* Music Code */
+const song = document.getElementById("musicAudio");      
+const crlIcon = document.getElementById("playMusic"); 
+
+song.onloadedmetadata = function(){
+   song.currentTime = 0;
+   song.pause(); 
+} 
+
+function playPause(){
+  if(crlIcon.classList.contains("fa-circle-pause")){
+    song.pause();
+    crlIcon.classList.remove("fa-circle-pause");
+    crlIcon.classList.add("fa-circle-play");
+  }
+else{
+    song.play();
+    crlIcon.classList.add("fa-circle-pause");
+    crlIcon.classList.remove("fa-circle-play"); 
+  }
+}
+
+song.onended = function(){
+  crlIcon.classList.remove("fa-circle-pause");
+  crlIcon.classList.add("fa-circle-play");
+  song.currentTime = 0;
+  // progress.value = 0;
+  song.pause();
+} 
+
+class Node{
+  constructor(data){
+    this.data = data; 
+    this.next = null; 
+    this.prev = null; 
+  }
+} 
+
+let head = new Node("Kokomo, IN"); 
+head.next = new Node("A Lots Gonna Change");
+head.next.prev = head;
+head.next.next = new Node("Hello Again");
+head.next.next.prev = head.next; 
+head.next.next.next = head;
+head.prev = head.next.next;
+
+
+
+let headPointer = head; 
+
+function backClick(){
+  headPointer = headPointer.prev;
+  console.log(headPointer.data);
+  changeSong(); 
+}
+
+function upClick(){
+    headPointer = headPointer.next;
+    console.log(headPointer.data);
+    changeSong(); 
+}
+
+function changeSong(){
+  if(headPointer.data === "Kokomo, IN"){
+    document.getElementById("musicInfo").innerHTML = "Now Playing. . .<br> Kokomo, In <br> Japanese Breakfast <br> Instrumental"; 
+    document.getElementById("musicAudio").src = "JB_Instrumental.mp3";
+  }
+  else if(headPointer.data === "A Lots Gonna Change"){
+    document.getElementById("musicInfo").innerHTML = "Now Playing. . .<br> A Lot's Gonna Change <br> Weyes Blood <br> Instrumental";
+    document.getElementById("musicAudio").src = "WB_Instrumental.mp3";
+  }
+  else if(headPointer.data === "Hello Again"){
+    document.getElementById("musicInfo").innerHTML = "Now Playing. . .<br> Hello Again <br> Liana Flores <br> Instrumental";
+    document.getElementById("musicAudio").src = "LF_Instrumental.mp3";
+  }
+}
+
+function closeMusic(){
+  document.getElementById("mainMusic").style.display = 'none';
+} 
+
+function showMusic(){
+  document.getElementById("mainMusic").style.display = 'block';
+}
