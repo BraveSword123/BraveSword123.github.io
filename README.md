@@ -1,6 +1,6 @@
 ## 💾 Annabelle_Moore.exe
 
-**Annabelle_Moore.exe** is my official personal website — a nostalgic, interactive experience styled like a 2000s-era Windows desktop. It serves as a portfolio for some of my completed web development projects and includes my resume for anyone interested in learning more about my background or hiring me.
+**Annabelle_Moore.exe** is my official personal website — a nostalgic, interactive experience styled like a 2000s-era Windows desktop. It serves as a portfolio for all of my completed web development projects and includes my resume for anyone interested in learning more about my background or hiring me.
 
 ---
 
@@ -36,6 +36,9 @@ A faithful recreation of *The Sims 3* launcher using HTML, CSS, and JavaScript. 
 
 ### 🔢 Guess the Number Game
 A fun and simple guessing game where users try to guess a random number between 1 and 1000. Pastel theme inspired by Y2K design trends. Included a background that changes to a different gif whenever you reload the page
+
+### 🎵 My Favorite Music Player 
+A page detailing the My Favorite Music Player project, a website I created that plays my favorite music. It also plays  instrumental versions of three songs from the site.
 
 ---
 
