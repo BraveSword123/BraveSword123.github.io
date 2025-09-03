@@ -11,15 +11,16 @@ This website is designed to look and feel like the homescreen of a retro Windows
 ---
 
 ## 📸 Screenshots
-<img width="3000" height="1726" alt="image" src="https://github.com/user-attachments/assets/b8d45628-e750-49c4-87b1-306e9884cdf9" />
-<img width="3000" height="1718" alt="image" src="https://github.com/user-attachments/assets/95364156-f9b4-4baa-a2fc-2a47c826cf91" />
-<img width="2998" height="1720" alt="image" src="https://github.com/user-attachments/assets/0a1ba5e3-3d45-4724-a8dc-ef89f7b40076" />
-<img width="3000" height="1722" alt="image" src="https://github.com/user-attachments/assets/a03e9afc-417d-46a2-aeda-55487d655591" />
-<img width="3000" height="1724" alt="image" src="https://github.com/user-attachments/assets/07846976-066c-4d3b-bc13-66a13f649a52" />
+<img width="2998" height="1726" alt="image" src="https://github.com/user-attachments/assets/a197895c-ffe8-41e6-8213-3afc7f9337f0" />
+<img width="3000" height="1724" alt="image" src="https://github.com/user-attachments/assets/530f5bc5-08c5-4b89-ac2a-5fa6c6032ff1" />
+<img width="3000" height="1722" alt="image" src="https://github.com/user-attachments/assets/c7845b7e-d0dc-44e7-946d-3b67f9b95ee1" />
+<img width="3000" height="1732" alt="image" src="https://github.com/user-attachments/assets/a36a5332-a0fc-4302-8e39-bcecf7faf535" />
+<img width="3000" height="1722" alt="image" src="https://github.com/user-attachments/assets/3a13aba1-d311-4526-abfb-76b8978cc645" />
+<img width="3000" height="1726" alt="image" src="https://github.com/user-attachments/assets/9326ace6-2306-45ec-817a-082d0d125c1e" />
 
 ---
 
-### ✨ Features
+## ✨ Features
 
 - 🌿 Fully themed Windows XP-style UI
 - 🖱 Clickable desktop icons that open individual projects
