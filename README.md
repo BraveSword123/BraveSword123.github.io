@@ -1,6 +1,6 @@
-## 💾 Annabelle_Moore_XP
+## 💾 Annabelle Moore XP
 
-**Annabelle_Moore_XP** is my official personal website — a nostalgic, interactive experience styled like a 2000s-era Windows desktop. It serves as a portfolio for all of my completed web development projects and includes my resume for anyone interested in learning more about my background or hiring me.
+**Annabelle Moore XP** is my official personal website — a nostalgic, interactive experience styled like a 2000s-era Windows desktop. It serves as a portfolio for all of my completed web development projects and includes my resume for anyone interested in learning more about my background or hiring me.
 
 ---
 
