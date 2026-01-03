@@ -20,7 +20,6 @@ function closeSimsExp(){
  function setActiveTab(selector) {
   document.querySelectorAll('.side .welcome, .side .Exp, .side .Down, .side .Content, .side .Uploads')
     .forEach(btn => btn.classList.remove('tab-active'));
-    // When its selected, add the shadow 
   document.querySelectorAll(selector).forEach(btn => btn.classList.add('tab-active'));
 }
 
@@ -36,7 +35,7 @@ function toExp(){
   setActiveTab('.side .Exp');    
 }
 
-/* Number Game JS */ 
+// Number Game JS
 // Declares 
 let gameCount;
 let numInput;
@@ -117,7 +116,7 @@ function closeGame(){
   document.getElementById("Number_wrapper").style.display = 'none';
 }
 
-/* Music Code */
+// Music Code 
 const song = document.getElementById("musicAudio");      
 const crlIcon = document.getElementById("playMusic"); 
 

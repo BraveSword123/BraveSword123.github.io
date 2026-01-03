@@ -112,12 +112,8 @@ body {
  left:-552px;
 }
 
-/*End Here */ 
-
-/* Did not include this*/ 
 #Sims_container{
   position: relative;  
- /* width: 120em; */ 
 }
 
 #webpage{
@@ -173,8 +169,6 @@ body {
   margin-left: 5px; 
   margin-right: 5px;   
   }
-
-/*Stop Here*/ 
 
 #IE_text:hover{
   cursor: pointer;
@@ -238,7 +232,6 @@ body {
   cursor: pointer;
   display: block;
 } 
-/* Stop Here */ 
 
 .Welcome_Sims {
   min-width: 840px;
@@ -431,7 +424,6 @@ body {
   left: 60px;
   bottom: 2px;
 }
-/* Stop Here */ 
 
 .promo {
   position: absolute;
@@ -533,7 +525,6 @@ body {
 
   .line {
   border-left: 6px solid #55709d;
-  /* Border Colors */
   height: 541px;
   width: 278px;
   position: absolute;
@@ -1003,15 +994,6 @@ width:800px;
   height: 65px;
 }
 
-/* .info2:not(:hover) {
-  height: 65px;
-} 
-
- .info2:hover {
-  height: 120px;
-  cursor: pointer;
-} */ 
-
 .login:hover {
   color: white;
   cursor: pointer;
@@ -1043,11 +1025,6 @@ width:800px;
   color: mediumpurple; 
   background: rgb(230, 202, 247); 
 }
-
-/* Resume Scrollbar */
-
-
-/* Web Responsiveness */ 
 
 /* The Sims 3 Expansions */ 
 .secondExp {
@@ -1617,8 +1594,6 @@ input[type="checkbox"] {
 @font-face {
   font-family: "Windows";
   src: url("MedodicaRegular.otf");
- /* font-style: normal;
-  font-display: swap; */ 
 }
 
 #resizeMessageTopper{
@@ -1639,13 +1614,13 @@ top: 3px;
   border-top: 17px solid #000080; 
   padding-top: 10px; 
   font-family: "Windows", Lucida Console, 'Courier New', Courier, monospace; 
-  font-size: 15px;  /* 12.5*/ 
+  font-size: 15px;  
   color: black; 
   line-height: 1.5;
   padding-left: 5px; 
   padding-right: 5px; 
   padding-bottom: 5px; 
-  width: 300px; /* 450px*/ 
+  width: 300px; 
   position: absolute; 
   border-top: 2px solid white; 
   border-left: 2px solid white; 
@@ -1674,7 +1649,7 @@ top: 3px;
   border-left: 2px solid black; 
 }
 
-@media (max-width: 1082px), (max-height: 800px){  /*1001*/ 
+@media (max-width: 1082px), (max-height: 800px){  
   #resizeMessage{
     display: block
   }
