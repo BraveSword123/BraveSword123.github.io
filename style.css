@@ -1674,31 +1674,6 @@ top: 3px;
   border-left: 2px solid black; 
 }
 
-#resizeMessageClose{
-  background-color: #C0C0C0;  
-  height: 18px; 
-  width: 18px; 
-  position: absolute; 
-  right: 2px;
-  padding-left: 2.8px;  
-  border-top: 1px solid white; 
-  border-left: 1px solid white; 
-  border-right: 1px solid black; 
-  border-bottom: 1px solid black; 
-  margin-top: 1px; 
-}
-
-#resizeMessageClose:hover{
-  cursor: pointer; 
-}
-
-#resizeMessageClose:active{
-  cursor: pointer; 
-  border-right: 1px solid white; 
-  border-bottom: 1px solid white; 
-  border-top: 1px solid black; 
-  border-left: 1px solid black; 
-}
 @media (max-width: 1082px), (max-height: 800px){  /*1001*/ 
   #resizeMessage{
     display: block
