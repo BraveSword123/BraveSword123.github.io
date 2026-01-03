@@ -306,6 +306,7 @@ body {
   top: 2px;
   right: -390px;
   z-index: 3; 
+  padding-left: 15px; 
 }
 
 .side {
@@ -1627,6 +1628,7 @@ top: 3px;
   border-right: 2px solid black; 
   border-bottom: 2px solid black; 
   display: none; 
+  z-index: 10; 
 }
 
 #resizeMessageButton{
