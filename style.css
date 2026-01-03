@@ -1651,6 +1651,14 @@ top: 3px;
   border-left: 2px solid black; 
 }
 
+#resizeMessageButtonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}  
+
 @media (max-width: 1082px), (max-height: 800px){  
   #resizeMessage{
     display: block
