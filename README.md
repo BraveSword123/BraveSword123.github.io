@@ -63,6 +63,7 @@ A page detailing the My Favorite Music Player project, a website I created that 
 
 - Icons by [Smashicons](https://www.flaticon.com/authors/smashicons) via [Flaticon](https://www.flaticon.com)
 - Background: Windows XP "Bliss" (Public Domain)
+- Medodica Font: https://www.1001fonts.com/medodica-font.html
 
 ---
 
