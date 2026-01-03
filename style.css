@@ -1613,3 +1613,102 @@ input[type="checkbox"] {
   left: 2px; 
 }
 /* My Music Player */ 
+
+@font-face {
+  font-family: "Windows";
+  src: url("MedodicaRegular.otf");
+ /* font-style: normal;
+  font-display: swap; */ 
+}
+
+#resizeMessageTopper{
+background-color:#000080;  
+color: white; 
+height: 20px; 
+text-align: left; 
+padding-left: 5px; 
+position: absolute; 
+width: 300px;
+right: 2px;
+top: 3px;  
+}
+#resizeMessage{
+  margin: auto; 
+  background-color: #C0C0C0; 
+  text-align: center; 
+  border-top: 17px solid #000080; 
+  padding-top: 10px; 
+  font-family: "Windows", Lucida Console, 'Courier New', Courier, monospace; 
+  font-size: 15px;  /* 12.5*/ 
+  color: black; 
+  line-height: 1.5;
+  padding-left: 5px; 
+  padding-right: 5px; 
+  padding-bottom: 5px; 
+  width: 300px; /* 450px*/ 
+  position: absolute; 
+  border-top: 2px solid white; 
+  border-left: 2px solid white; 
+  border-right: 2px solid black; 
+  border-bottom: 2px solid black; 
+  display: none; 
+}
+
+#resizeMessageButton{
+  width: 80px;
+  background-color: #C0C0C0;  
+  border-top: 2px solid white; 
+  border-left: 2px solid white; 
+  font-family: "Windows", Lucida Console, 'Courier New', Courier, monospace; 
+}
+
+#resizeMessageButton:hover{
+  cursor: pointer;
+}
+
+#resizeMessageButton:active{
+  cursor: pointer;
+  border-right: 2px solid white; 
+  border-bottom: 2px solid white; 
+  border-top: 2px solid black; 
+  border-left: 2px solid black; 
+}
+
+#resizeMessageClose{
+  background-color: #C0C0C0;  
+  height: 18px; 
+  width: 18px; 
+  position: absolute; 
+  right: 2px;
+  padding-left: 2.8px;  
+  border-top: 1px solid white; 
+  border-left: 1px solid white; 
+  border-right: 1px solid black; 
+  border-bottom: 1px solid black; 
+  margin-top: 1px; 
+}
+
+#resizeMessageClose:hover{
+  cursor: pointer; 
+}
+
+#resizeMessageClose:active{
+  cursor: pointer; 
+  border-right: 1px solid white; 
+  border-bottom: 1px solid white; 
+  border-top: 1px solid black; 
+  border-left: 1px solid black; 
+}
+@media (max-width: 1082px), (max-height: 800px){  /*1001*/ 
+  #resizeMessage{
+    display: block
+  }
+
+  #IE_container{
+    display: none; 
+  }
+
+  #Sims_container{
+    display: none; 
+  }
+}
